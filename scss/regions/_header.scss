@@ -1,0 +1,93 @@
+/* ---------------------------------- header styles -----------------------------
+	------------------------------------------------------------------------------- */
+	
+.expectativa{
+	
+	.title{
+		>div{
+			padding-right: 5rem;
+			@media only screen and (max-width: $breakpoint_3){
+				text-align: center !important;
+			}
+			@media only screen and (max-width: $breakpoint_1){
+				padding-right: 2%;
+			}
+		}
+	}
+	
+	h1{
+		margin: 0;
+		position: relative;
+		display: inline-block;
+		@include font_universal (
+			$font_family_line_height: 160px,
+			$font_family_weight: 500,
+			$font_family_size: 160px,
+			$font_family_color: $color_white,
+			$font_family_letter_spacing: 20px,
+			$font_family_group: Landasans
+		);
+		
+		@media only screen and (max-width: $breakpoint_3){
+			font-size: 120px;
+			letter-spacing: 14px;
+			line-height: 120px;
+		}
+		
+		
+		@media only screen and (max-width: 550px){
+			font-size: 80px;
+			letter-spacing: 6px;
+			line-height: 80px;
+		}
+		
+		&:after{
+			position: absolute;
+			content: "";
+			top: 26px;
+			bottom: 12px;
+			left: 0;
+			right: -20px;
+			background: url(../images/text-bg.jpg);
+			mix-blend-mode: multiply;
+			background-size: cover;
+			
+			@media only screen and (max-width: $breakpoint_3){
+				top: 16px;
+				bottom: 2px;
+			}
+			
+			@media only screen and (max-width: 550px){
+				top: 12px;
+				bottom: 6px;
+			}
+			
+		}
+		
+	}
+	
+	h5{
+		text-align: right;
+		@include font_universal (
+			$font_family_line_height: 30px,
+			$font_family_weight: 500,
+			$font_family_size: 27px,
+			$font_family_color: $color_white,
+			$font_family_letter_spacing: .5px,
+			$font_family_group: Landasans
+		);
+		
+		@media only screen and (max-width: $breakpoint_3){
+			text-align: center;
+			font-size: 22px;
+			line-height: 22px;
+		}
+		
+		span{
+			background: $color_white;
+			color: $color_black;
+		}
+		
+	}
+	
+}

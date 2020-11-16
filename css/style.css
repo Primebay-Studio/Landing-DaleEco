@@ -1,0 +1,267 @@
+/* ------------------------ calculos bootstrap ------------------------
+------------------------------------------------------------------------ */
+@font-face {
+  font-family: 'Landasans Ultra';
+  src: url("../fonts/subset-Landasans-UltraLight.eot");
+  src: url("../fonts/subset-Landasans-UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-Landasans-UltraLight.woff2") format("woff2"), url("../fonts/subset-Landasans-UltraLight.woff") format("woff"), url("../fonts/subset-Landasans-UltraLight.ttf") format("truetype"), url("../fonts/subset-Landasans-UltraLight.svg#Landasans-UltraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Landasans';
+  src: url("../fonts/subset-Landasans-Medium.eot");
+  src: url("../fonts/subset-Landasans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-Landasans-Medium.woff2") format("woff2"), url("../fonts/subset-Landasans-Medium.woff") format("woff"), url("../fonts/subset-Landasans-Medium.ttf") format("truetype"), url("../fonts/subset-Landasans-Medium.svg#Landasans-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@media (pointer: coarse) {
+  html {
+    overflow-x: hidden; } }
+
+html body.expectativa {
+  background: #000000;
+  color: #ffffff; }
+
+html body {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  font-family: Landasans;
+  color: #000000;
+  letter-spacing: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  overflow-x: hidden;
+  height: 100%; }
+  @media (pointer: coarse) {
+    html body {
+      overflow-x: hidden; } }
+  html body img {
+    max-width: 100%;
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    html body img:hover {
+      -webkit-box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.3); }
+  html body a {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  html body ::after, html body ::before {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  html body hr {
+    margin: 1rem -2rem 1rem; }
+  html body p a:hover {
+    text-decoration: none; }
+  html body em,
+  html body i {
+    font-style: italic; }
+  html body a {
+    position: relative;
+    display: inline-block; }
+    html body a:hover, html body a:focus {
+      text-decoration: none; }
+
+/* ---------------------------------- Videos  -----------------------------
+	------------------------------------------------------------------------------- */
+.video_container {
+  position: relative;
+  padding-bottom: 57.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+  .video_container iframe {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border: 0; }
+
+/* ---------------------------------- header styles -----------------------------
+	------------------------------------------------------------------------------- */
+.expectativa .title > div {
+  padding-right: 5rem; }
+  @media only screen and (max-width: 768px) {
+    .expectativa .title > div {
+      text-align: center !important; } }
+  @media only screen and (max-width: 1199px) {
+    .expectativa .title > div {
+      padding-right: 2%; } }
+
+.expectativa h1 {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  font-size: 160px;
+  line-height: 160px;
+  font-weight: 500;
+  font-family: Landasans;
+  color: #ffffff;
+  letter-spacing: 20px; }
+  @media only screen and (max-width: 768px) {
+    .expectativa h1 {
+      font-size: 120px;
+      letter-spacing: 14px;
+      line-height: 120px; } }
+  @media only screen and (max-width: 550px) {
+    .expectativa h1 {
+      font-size: 80px;
+      letter-spacing: 6px;
+      line-height: 80px; } }
+  .expectativa h1:after {
+    position: absolute;
+    content: "";
+    top: 26px;
+    bottom: 12px;
+    left: 0;
+    right: -20px;
+    background: url(../images/text-bg.jpg);
+    mix-blend-mode: multiply;
+    background-size: cover; }
+    @media only screen and (max-width: 768px) {
+      .expectativa h1:after {
+        top: 16px;
+        bottom: 2px; } }
+    @media only screen and (max-width: 550px) {
+      .expectativa h1:after {
+        top: 12px;
+        bottom: 6px; } }
+
+.expectativa h5 {
+  text-align: right;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: Landasans;
+  color: #ffffff;
+  letter-spacing: 0.5px; }
+  @media only screen and (max-width: 768px) {
+    .expectativa h5 {
+      text-align: center;
+      font-size: 22px;
+      line-height: 22px; } }
+  .expectativa h5 span {
+    background: #ffffff;
+    color: #000000; }
+
+/* ---------------------------------- countdown styles -----------------------------
+	------------------------------------------------------------------------------- */
+.countdown_container {
+  margin-top: 2rem; }
+  @media only screen and (max-width: 768px) {
+    .countdown_container {
+      text-align: center; } }
+  .countdown_container p {
+    font-size: 20px; }
+  .countdown_container #countdown ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .countdown_container #countdown ul li {
+      display: inline-block;
+      margin-right: 2rem;
+      position: relative; }
+      .countdown_container #countdown ul li:after {
+        position: absolute;
+        content: ":";
+        font-size: 60px;
+        line-height: 60px;
+        right: -24%;
+        top: 10%; }
+        @media only screen and (max-width: 500px) {
+          .countdown_container #countdown ul li:after {
+            font-size: 35px;
+            line-height: 35px; } }
+      .countdown_container #countdown ul li:last-child:after {
+        display: none; }
+      .countdown_container #countdown ul li .numbers {
+        border: 1px solid #ffffff;
+        border-radius: .5rem;
+        padding: 1rem;
+        display: block;
+        font-size: 50px;
+        line-height: 50px;
+        text-align: center;
+        margin-bottom: .5rem; }
+        @media only screen and (max-width: 768px) {
+          .countdown_container #countdown ul li .numbers {
+            font-size: 35px;
+            line-height: 35px; } }
+      .countdown_container #countdown ul li .text_number {
+        display: block;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center; }
+
+/* ---------------------------------- section video styles -----------------------------
+	------------------------------------------------------------------------------- */
+.video {
+  margin-top: 3.5rem; }
+  @media only screen and (max-width: 768px) {
+    .video {
+      text-align: center; } }
+  .video h4 {
+    display: inline-block; }
+  .video .logo_eco {
+    display: inline-block;
+    position: relative;
+    top: -4rem;
+    right: -1rem; }
+    @media only screen and (max-width: 768px) {
+      .video .logo_eco {
+        right: initial;
+        top: initial; } }
+
+/* ---------------------------------- foto bg styles -----------------------------
+	------------------------------------------------------------------------------- */
+.foto_bg {
+  z-index: -1;
+  position: absolute;
+  bottom: -9%;
+  left: 7%;
+  max-width: 100%; }
+  @media only screen and (max-width: 1567px) {
+    .foto_bg {
+      left: 3%; } }
+  @media only screen and (max-width: 1250px) {
+    .foto_bg {
+      left: -10%; } }
+  @media only screen and (max-width: 1050px) {
+    .foto_bg {
+      left: -20%; } }
+  @media only screen and (max-width: 756px) {
+    .foto_bg {
+      left: -19%;
+      position: relative;
+      max-width: initial;
+      width: 130%; } }
+
+/* ---------------------------------- side serial styles -----------------------------
+	------------------------------------------------------------------------------- */
+.side_serial {
+  position: fixed;
+  right: 0;
+  bottom: 10%;
+  transform: rotate(-90deg); }
+  @media only screen and (max-width: 768px) {
+    .side_serial {
+      position: absolute;
+      bottom: -30%; } }

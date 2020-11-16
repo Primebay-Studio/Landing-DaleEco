@@ -1,0 +1,83 @@
+ html{
+	@media (pointer:coarse){
+		overflow-x: hidden;
+	}
+	
+	
+	body.expectativa{
+		background: $color_black;
+		color: $color_white;
+		
+		
+	}
+	
+	body{
+		@include font_universal (
+			$font_family_line_height: 20px,
+			$font_family_weight: 300,
+			$font_family_size: 16px,
+			$font_family_color: $color_black,
+			$font_family_letter_spacing: 0,
+			$font_family_group: Landasans
+		);
+		@include prefix(transition, all 0.3s ease, webkit moz o ms);
+		overflow-x: hidden;
+		height: 100%;
+		@media (pointer:coarse){
+			overflow-x: hidden;
+		}
+		
+		img{
+			max-width: 100%;
+			height: auto;
+			image-rendering: -webkit-optimize-contrast;
+			//@include prefix(border-radius, 0.3rem, webkit moz);
+			@include prefix(transition, all 0.3s ease, webkit moz o ms);
+			
+			&:hover{
+				@include prefix(box-shadow, 0px 10px 24px rgba(0,0,0,0.3), webkit moz);
+			}
+			
+		}
+		
+		a{
+			@include prefix(transition, all 0.3s ease, webkit moz o ms);
+		}
+		
+		::after, ::before{
+			@include prefix(transition, all 0.3s ease, webkit moz o ms);
+		}
+		
+		hr{
+			margin: 1rem -2rem 1rem;
+		}
+		
+		b{
+			
+		}
+		
+		p{
+			a{
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+		
+		em,
+		i{
+			font-style: italic;
+		}
+		
+		a{
+			position: relative;
+			display: inline-block;
+			//@include line-hover-after($color_brand);
+			&:hover, &:focus {
+				text-decoration: none;
+			}
+		}
+		
+	}
+	
+}

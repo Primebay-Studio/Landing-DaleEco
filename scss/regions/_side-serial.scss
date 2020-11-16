@@ -1,0 +1,16 @@
+/* ---------------------------------- side serial styles -----------------------------
+	------------------------------------------------------------------------------- */
+	
+.side_serial{
+
+	position: fixed;
+	right: 0;
+	bottom: 10%;
+	transform: rotate(-90deg);
+	
+	@media only screen and (max-width: $breakpoint_3){
+		position: absolute;
+		bottom: -30%;
+	}
+	
+}

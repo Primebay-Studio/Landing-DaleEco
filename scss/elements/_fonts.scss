@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Landasans Ultra';
+    src: url('../fonts/subset-Landasans-UltraLight.eot');
+    src: url('../fonts/subset-Landasans-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-Landasans-UltraLight.woff2') format('woff2'),
+        url('../fonts/subset-Landasans-UltraLight.woff') format('woff'),
+        url('../fonts/subset-Landasans-UltraLight.ttf') format('truetype'),
+        url('../fonts/subset-Landasans-UltraLight.svg#Landasans-UltraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Landasans';
+    src: url('../fonts/subset-Landasans-Medium.eot');
+    src: url('../fonts/subset-Landasans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-Landasans-Medium.woff2') format('woff2'),
+        url('../fonts/subset-Landasans-Medium.woff') format('woff'),
+        url('../fonts/subset-Landasans-Medium.ttf') format('truetype'),
+        url('../fonts/subset-Landasans-Medium.svg#Landasans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,277 @@
+@mixin resets-edge-ie ($css-rule, $css-property){
+	// ---
+	// --- support microsoft edge ---
+	@supports (-ms-ime-align: auto) {
+		#{$css-rule}: $css-property;							
+	}
+	
+	// ---
+	// --- support internet explorer ---
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+		#{$css-rule}: $css-property;		
+	}
+}
+
+// ------------------------ Display grid cross browser settings --------------------------- //
+// --------------------------------------------------- //
+// display grid parent
+@mixin display-grid{
+	
+	@supports (display: grid) {
+		display: grid;
+	}
+	
+	@supports (-ms-ime-align: auto) {
+		display: grid;							
+	}
+	
+	@supports not (display: grid){
+		display: inline-block;
+	}
+	
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+		display: -ms-grid;		
+	}
+	
+}
+
+// display flex parent
+@mixin display-flex{
+	
+	@supports (display: flex) {
+		display: flex;
+	}
+	
+	@supports (-ms-ime-align: auto) {
+		display: flex;							
+	}
+	
+	@supports not (display: flex){
+		display: inline-block;
+		width: 100%;
+	}
+	
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+		display: -ms-grid;	
+		width: 100%;	
+	}
+	
+}
+
+// ------------------------ cross browsers mixins --------------------------- //
+// --------------------------------------------------- //
+
+/// Mixin to prefix a property
+/// @author Hugo Giraudel
+/// @param {String} $property - Property name
+/// @param {*} $value - Property value
+/// @param {List} $prefixes (()) - List of prefixes to print
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+ 
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
+}
+
+// usage
+//@include prefix(border-radius, 0px, webkit moz);
+
+// ------------------------ Display grid columns parent cross browser settings --------------------------- //
+// --------------------------------------------------- //
+// display grid child parents
+@mixin grid-parent-1-columns ($x1) {
+	  grid-template-columns: $x1;
+  -ms-grid-columns: $x1;
+}
+
+@mixin grid-parent-2-columns ($x1, $x2) {
+	  grid-template-columns: $x1 $x2;
+  -ms-grid-columns: $x1 $x2;
+}
+
+@mixin grid-parent-3-columns ($x1, $x2, $x3) {
+	  grid-template-columns: $x1 $x2 $x3;
+  -ms-grid-columns: $x1 $x2 $x3;
+}
+
+@mixin grid-parent-4-columns ($x1, $x2, $x3, $x4) {
+	  grid-template-columns: $x1 $x2 $x3 $x4;
+  -ms-grid-columns: $x1 $x2 $x3 $x4;
+}
+
+@mixin grid-parent-5-columns ($x1, $x2, $x3, $x4, $x5) {
+	  grid-template-columns: $x1 $x2 $x3 $x4 $x5;
+  -ms-grid-columns: $x1 $x2 $x3 $x4 $x5;
+}
+
+@mixin grid-parent-6-columns ($x1, $x2, $x3, $x4, $x5, $x6) {
+	  grid-template-columns: $x1 $x2 $x3 $x4 $x5 $x6;
+  -ms-grid-columns: $x1 $x2 $x3 $x4 $x5 $x6;
+}
+
+@mixin grid-parent-7-columns ($x1, $x2, $x3, $x4, $x5, $x6, $x7) {
+	  grid-template-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7;
+  -ms-grid-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7;
+}
+
+@mixin grid-parent-8-columns ($x1, $x2, $x3, $x4, $x5, $x6, $x7, $x8) {
+	  grid-template-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8;
+  -ms-grid-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8;
+}
+
+@mixin grid-parent-9-columns ($x1, $x2, $x3, $x4, $x5, $x6, $x7, $x8, $x9) {
+	  grid-template-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9;
+  -ms-grid-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9;
+}
+
+@mixin grid-parent-10-columns ($x1, $x2, $x3, $x4, $x5, $x6, $x7, $x8, $x9, $x10) {
+	  grid-template-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10;
+  -ms-grid-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10;
+}
+
+@mixin grid-parent-11-columns ($x1, $x2, $x3, $x4, $x5, $x6, $x7, $x8, $x9, $x10, $x11) {
+	  grid-template-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10 $x11;
+  -ms-grid-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10 $x11;
+}
+
+@mixin grid-parent-12-columns ($x1, $x2, $x3, $x4, $x5, $x6, $x7, $x8, $x9, $x10, $x11, $x12) {
+	  grid-template-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10 $x11 $x12;
+  -ms-grid-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10 $x11 $x12;
+}
+
+@mixin grid-parent-13-columns ($x1, $x2, $x3, $x4, $x5, $x6, $x7, $x8, $x9, $x10, $x11, $x12, $x13) {
+	  grid-template-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10 $x11 $x12 $x13;
+  -ms-grid-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10 $x11 $x12 $x13;
+}
+
+@mixin grid-parent-14-columns ($x1, $x2, $x3, $x4, $x5, $x6, $x7, $x8, $x9, $x10, $x11, $x12, $x13, $x14) {
+	  grid-template-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10 $x11 $x12 $x13 $x14;
+  -ms-grid-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10 $x11 $x12 $x13 $x14;
+}
+
+@mixin grid-parent-15-columns ($x1, $x2, $x3, $x4, $x5, $x6, $x7, $x8, $x9, $x10, $x11, $x12, $x13, $x14, $x15) {
+	  grid-template-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10 $x11 $x12 $x13 $x14 $x15;
+  -ms-grid-columns: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10 $x11 $x12 $x13 $x14 $x15;
+}
+
+// ------------------------ Display grid rows parent cross browser settings --------------------------- //
+// --------------------------------------------------- //
+// display grid child parents
+@mixin grid-parent-1-rows ($x1) {
+	grid-template-rows: $x1;
+  -ms-grid-rows: $x1;
+}
+
+@mixin grid-parent-2-rows ($x1, $x2) {
+	  grid-template-rows: $x1 $x2;
+  -ms-grid-rows: $x1 $x2;
+}
+
+@mixin grid-parent-3-rows ($x1, $x2, $x3) {
+	  grid-template-rows: $x1 $x2 $x3;
+  -ms-grid-rows: $x1 $x2 $x3;
+}
+
+@mixin grid-parent-4-rows ($x1, $x2, $x3, $x4) {
+	  grid-template-rows: $x1 $x2 $x3 $x4;
+  -ms-grid-rows: $x1 $x2 $x3 $x4;
+}
+
+@mixin grid-parent-5-rows ($x1, $x2, $x3, $x4, $x5) {
+	  grid-template-rows: $x1 $x2 $x3 $x4 $x5;
+  -ms-grid-rows: $x1 $x2 $x3 $x4 $x5;
+}
+
+@mixin grid-parent-6-rows ($x1, $x2, $x3, $x4, $x5, $x6) {
+	  grid-template-rows: $x1 $x2 $x3 $x4 $x5 $x6;
+  -ms-grid-rows: $x1 $x2 $x3 $x4 $x5 $x6;
+}
+
+@mixin grid-parent-7-rows ($x1, $x2, $x3, $x4, $x5, $x6, $x7) {
+	  grid-template-rows: $x1 $x2 $x3 $x4 $x5 $x6 $x7;
+  -ms-grid-rows: $x1 $x2 $x3 $x4 $x5 $x6 $x7;
+}
+
+@mixin grid-parent-8-rows ($x1, $x2, $x3, $x4, $x5, $x6, $x7, $x8) {
+	  grid-template-rows: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8;
+  -ms-grid-rows: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8;
+}
+
+@mixin grid-parent-9-rows ($x1, $x2, $x3, $x4, $x5, $x6, $x7, $x8, $x9) {
+	  grid-template-rows: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9;
+  -ms-grid-rows: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9;
+}
+
+@mixin grid-parent-10-rows ($x1, $x2, $x3, $x4, $x5, $x6, $x7, $x8, $x9, $x10) {
+	  grid-template-rows: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10;
+  -ms-grid-rows: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10;
+}
+
+@mixin grid-parent-11-rows ($x1, $x2, $x3, $x4, $x5, $x6, $x7, $x8, $x9, $x10, $x11) {
+	  grid-template-rows: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10 $x11;
+  -ms-grid-rows: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10 $x11;
+}
+
+@mixin grid-parent-12-rows ($x1, $x2, $x3, $x4, $x5, $x6, $x7, $x8, $x9, $x10, $x11, $x12) {
+	  grid-template-rows: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10 $x11 $x12;
+  -ms-grid-rows: $x1 $x2 $x3 $x4 $x5 $x6 $x7 $x8 $x9 $x10 $x11 $x12;
+}
+
+// display grid child columns
+@mixin grid-child-column ($col-start, $col-end) {
+	  grid-column: #{$col-start}/#{$col-end};
+  -ms-grid-column: $col-start;
+  -ms-grid-column-span: $col-end - $col-start;
+}
+
+// display grid child rows
+@mixin grid-child-row ($row-start, $row-end) {
+	  grid-row: #{$row-start}/#{$row-end};
+  -ms-grid-row: $row-start;
+  -ms-grid-row-span: $row-end - $row-start;
+}
+
+
+// ------------------------ Colores HEX --------------------------- //
+// --------------------------------------------------- //
+@mixin color-hexed($bg: $bg_color){
+	display: block;
+	width: 100%;
+	height: 10rem;
+	background: $bg;
+}
+
+@mixin font_universal ($font_family_line_height: $line_height,
+$font_family_weight: $weight,
+$font_family_size: $size,
+$font_family_color: $color,
+$font_family_letter_spacing: $spacing,
+$font_family_group: $family) {
+  font-size: $font_family_size;
+  line-height: $font_family_line_height;
+  font-weight: $font_family_weight;
+  font-family: $font_family_group;
+  color: $font_family_color;
+  letter-spacing: $font_family_letter_spacing;
+}
+
+@mixin bg-laterales($color, $width: $bg-demasia-width) {
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        background-color: $color;
+        width: $width;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+    }
+    &::before {
+        left: 100%;
+    }
+    &::after {
+        right: 100%;
+    }
+}
