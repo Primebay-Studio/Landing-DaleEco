@@ -1,0 +1,16 @@
+// ------------------------------------ Global elements ------------------------------------ 
+@import 'elements/_mixins';
+@import 'elements/_config';
+@import 'elements/_fonts';
+@import 'elements/_base2';
+@import 'elements/_video';
+
+// ------------------------------------ Regions (footer, header, menus, etc) ------------------------------------ 
+@import 'regions2/_body';
+@import 'regions2/_header';
+@import 'regions2/_nav';
+@import 'regions2/_foto-bg';
+@import 'regions2/_info-content';
+@import 'regions2/_video';
+@import 'regions2/_sups';
+@import 'regions2/_side-serial';

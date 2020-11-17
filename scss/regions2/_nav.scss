@@ -1,0 +1,87 @@
+/* ---------------------------------- navbar styles -----------------------------
+	------------------------------------------------------------------------------- */
+	
+.navbar{
+	color: $color_white;
+	
+	a{
+		@include font_universal (
+			$font_family_line_height: 16px,
+			$font_family_weight: 300,
+			$font_family_size: 14px,
+			$font_family_color: $color_white,
+			$font_family_letter_spacing: 0,
+			$font_family_group: Galano Medium
+		);
+		
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	
+	.navbar-brand{
+		img{
+			max-width: 12rem;
+		}
+	}
+	
+	.redes{
+		
+		@media only screen and (max-width: $breakpoint_1){
+			
+			border-bottom: 2px solid $color_white;
+			padding-bottom: 1rem;
+			margin-bottom: 1rem;
+			
+			.navbar-nav{
+				display: inline-block;
+			}
+			
+			.nav-item{
+				display: inline-block;
+			}
+			
+		}
+		
+		img{
+			max-width: 1.5rem;
+			height: auto;
+			vertical-align: middle;
+			margin: 0 .3rem;
+		}
+		
+	}
+	
+	.menu{
+		width: 100%;
+		
+		@media only screen and (max-width: $breakpoint_1){
+			margin: 0;
+		}
+		
+	}
+	
+	//responsive
+	.navbar-toggler{
+		background: $color_white;
+		border: 1px solid $color_white;
+		
+		&:hover{
+			background: $color_blue;
+		}
+		
+		.navbar-toggler-icon{
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+		}
+		
+	}
+	
+	.navbar-collapse.show{
+		margin-top: 1rem;
+		border: 2px solid $color_white;
+		padding: 1rem;
+		border-radius: 1rem;
+		
+	}
+	
+}

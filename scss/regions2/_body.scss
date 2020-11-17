@@ -1,0 +1,47 @@
+/* ---------------------------------- body styles -----------------------------
+	------------------------------------------------------------------------------- */
+	
+body{
+	
+	position: relative;
+	background: $color_blue;
+	background-image: url(../images/bg-field.jpg);
+    background-blend-mode: color-burn;
+    background-size: auto;
+    
+    &:after{
+	    //position: absolute;
+	    //content:"";
+	    //background: url(../images/bg-yellow.svg);
+	    //top: 0;
+	    //left: 0;
+	    //bottom: 0;
+		//height: 100%;
+		//mix-blend-mode: hard-light;
+		//width: 28rem;
+		//z-index: -1;
+		//background-repeat: no-repeat;
+		position: fixed;
+		content: "";
+		background: url(../images/bg-yellow-2.png);
+		top: 0;
+		left: 0;
+		bottom: 0;
+		height: auto;
+		/* mix-blend-mode: hard-light; */
+		width: 28rem;
+		z-index: -1;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+		@media only screen and (max-width: $breakpoint_2){
+			left: -10rem;
+		}
+		
+		@media only screen and (max-width: $breakpoint_3){
+			left: -15rem
+		}
+		
+    }
+	
+}

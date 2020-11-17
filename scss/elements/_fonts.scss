@@ -23,3 +23,15 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Galano Medium';
+    src: url('../fonts/Galano-Grotesque-Medium.eot');
+    src: url('../fonts/Galano-Grotesque-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Galano-Grotesque-Medium.woff') format('woff'),
+        url('../fonts/Galano-Grotesque-Medium.ttf') format('truetype'),
+        url('../fonts/Galano-Grotesque-Medium.svg#Galano-Grotesque-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

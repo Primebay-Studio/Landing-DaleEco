@@ -1,0 +1,23 @@
+/* ---------------------------------- foto bg styles -----------------------------
+	------------------------------------------------------------------------------- */
+.foto_bg {
+  z-index: -1;
+  position: absolute;
+  bottom: -9%;
+  left: 7%;
+  max-width: 100%; }
+  @media only screen and (max-width: 1567px) {
+    .foto_bg {
+      left: 3%; } }
+  @media only screen and (max-width: 1250px) {
+    .foto_bg {
+      left: -10%; } }
+  @media only screen and (max-width: 1050px) {
+    .foto_bg {
+      left: -20%; } }
+  @media only screen and (max-width: 756px) {
+    .foto_bg {
+      left: -19%;
+      position: relative;
+      max-width: initial;
+      width: 130%; } }

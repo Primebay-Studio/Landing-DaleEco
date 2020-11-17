@@ -1,0 +1,21 @@
+/* ---------------------------------- title first styles -----------------------------
+	------------------------------------------------------------------------------- */
+	
+.sups{
+	margin: 3rem 0;
+	z-index: 2;
+	position: relative;
+	
+	p{
+		font-size: 12px;
+		line-height: 13px;
+		
+		a{
+			color: $color_white;
+			word-break: break-all;
+			display: inline;
+		}
+		
+	}
+	
+}
