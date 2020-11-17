@@ -105,7 +105,8 @@ body {
   background: #00bae0;
   background-image: url(../images/bg-field.jpg);
   background-blend-mode: color-burn;
-  background-size: auto; }
+  background-size: auto;
+  background-repeat: no-repeat; }
   body:after {
     position: fixed;
     content: "";
